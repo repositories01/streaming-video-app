@@ -1,5 +1,0 @@
-rootProject.name = 'admin-video'
-include 'domain'
-include 'application'
-include 'infra'
-
