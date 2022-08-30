@@ -1,5 +1,6 @@
-package com.admin.video.catalog.domain.category;
+package com.admin.video.catalog.domain;
 
+import com.admin.video.catalog.domain.category.Category;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -16,5 +17,6 @@ public class CategoryTest {
         Assertions.assertEquals(expectedName, actualCategory.getName());
         Assertions.assertEquals(expectedDescription, actualCategory.getDescription());
         Assertions.assertEquals(expectedIsActive, actualCategory.isActive());
+
     }
 }
