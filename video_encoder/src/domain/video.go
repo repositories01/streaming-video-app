@@ -1,8 +1,8 @@
 package domain
 
 import (
-	"time"
 	"github.com/asaskevich/govalidator"
+	"time"
 )
 
 type Video struct {

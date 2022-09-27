@@ -1,9 +1,9 @@
 package domain_test
 
 import (
-	"encoder/domain"
+	"encoder/src/domain"
+	uuid "github.com/satori/go.uuid"
 	"github.com/stretchr/testify/require"
-  uuid "github.com/satori/go.uuid"
 	"testing"
 	"time"
 )
@@ -28,8 +28,8 @@ func TestVideoIdIsNotUUID(t *testing.T) {
 func TestVideoValidation(t *testing.T) {
 	video := domain.NewVideo()
 
-	video.ID = uuid.NewV4.String()
-  video.ResorceID = "a"
+	video.ID = uuid.NewV4().String()
+	video.ResorceID = "a"
 	video.FilePath = "a"
 	video.CreatedAt = time.Now()
 
