@@ -17,7 +17,7 @@ func TestValidadeIfVideoIsEmpty(t *testing.T) {
 func TestVideoIdIsNotUUID(t *testing.T) {
 	video := domain.NewVideo()
 	video.ID = "not_uuid"
-	video.ResorceID = "a"
+	video.ResourceID = "a"
 	video.FilePath = "a"
 	video.CreatedAt = time.Now()
 
@@ -29,7 +29,7 @@ func TestVideoValidation(t *testing.T) {
 	video := domain.NewVideo()
 
 	video.ID = uuid.NewV4().String()
-	video.ResorceID = "a"
+	video.ResourceID = "a"
 	video.FilePath = "a"
 	video.CreatedAt = time.Now()
 
