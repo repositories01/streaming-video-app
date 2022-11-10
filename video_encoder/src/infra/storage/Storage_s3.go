@@ -9,5 +9,4 @@ func (s *StorageS3) NewStorageS3(bucketName string) *StorageS3 {
 }
 
 func (s *StorageS3) DownloadFile(filePath string) {
-
 }
